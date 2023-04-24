@@ -46,5 +46,32 @@ public class Entregador extends EntidadeAuditavel{
 
     @Column
     private Integer qtdEntregasRealizadas;
+
+    @Column
+    private Double valorFrete;
+
+    @Column
+    private String enderecoRua;
+
+    @Column
+    private String enderecoNumero;
+
+    @Column
+    private String enderecoBairro;
+
+    @Column
+    private String enderecoCidade;
+
+    @Column
+    private String enderecoCep;
+
+    @Column
+    private String enderecoUf;
+
+    @Column
+    private String enderecoComplemento;
+
+    @Column
+    private Integer ativo;
     
 }
