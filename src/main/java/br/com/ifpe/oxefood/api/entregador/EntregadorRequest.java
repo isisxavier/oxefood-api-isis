@@ -46,7 +46,7 @@ public class EntregadorRequest {
 
     private String enderecoComplemento;
 
-    private Integer ativo;
+    private Boolean ativo;
     
     public Entregador build() {
  

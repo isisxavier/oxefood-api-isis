@@ -12,11 +12,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 import br.com.ifpe.oxefood.modelo.entregador.Entregador;
 import br.com.ifpe.oxefood.modelo.entregador.EntregadorService;
+import br.com.ifpe.oxefood.util.entity.GenericController;
 
 @RestController
 @RequestMapping("/api/entregador")
 
-public class EntregadorController {
+public class EntregadorController extends GenericController{
     @Autowired
     private EntregadorService entregadorService;
  
