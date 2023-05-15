@@ -27,12 +27,12 @@ public class ClienteService extends GenericService {
    public List<Cliente> listarTodos() {
   
     return repository.findAll();
-}
+    }
 
-public Cliente obterPorID(Long id) {
+    public Cliente obterPorID(Long id) {
 
     return repository.findById(id).get();
-}
+    }
 
 
 }
