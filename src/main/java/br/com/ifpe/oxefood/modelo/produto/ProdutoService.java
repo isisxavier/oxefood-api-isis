@@ -47,5 +47,16 @@ public class ProdutoService extends GenericService{
     repository.save(produto);
     }
 
+    @Transactional
+   public void delete(Long id) {
+
+    Produto produto = repository.findById(id).get();
+    produto.setHabilitado(Boolean.FALSE);
+       super.preencherCamposAuditoria(produto);
+
+       repository.save(produto);
+   }
+
+
     
 }
